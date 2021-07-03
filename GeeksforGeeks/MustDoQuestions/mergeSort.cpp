@@ -7,10 +7,9 @@ class sort{
         if (left==right)
             return;
         int mid = left+(right-left)/2;
-        sort obj;
-        obj.mergeSort(arr,left,mid);
-        obj.mergeSort(arr,mid+1,right);
-        obj.merge(arr,left,mid,right);
+        mergeSort(arr,left,mid);
+        mergeSort(arr,mid+1,right);
+        merge(arr,left,mid,right);
     }
     private:
     void merge(int arr[], int left, int mid, int right){
