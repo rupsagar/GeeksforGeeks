@@ -26,7 +26,6 @@ class solution{
         }
         if (pos.size()==1)
             pos.front()=-1;
-
         return pos;
     }
 };
